@@ -1,4 +1,4 @@
-﻿/*
+/*
     NAME: CRISOSTOMO, JOSHUA B.
     COURSE/SECTION: BSCPE 1-1
 */
@@ -12,7 +12,7 @@ public class BasicAccountInterface
         
         while (totalLogIns > 0)
         {
-            Console.Write("\nEnter Username: ");
+            Console.Write("Enter Username: ");
             string username = Console.ReadLine();
             Console.Write("Enter Password: ");
             string password = Console.ReadLine();
@@ -28,13 +28,13 @@ public class BasicAccountInterface
                 if (totalLogIns > 0)
                 {
                     Console.WriteLine("Incorrect credentials. Please try again!");
-                    Console.WriteLine("Number of Log-in attempt/s left: " + totalLogIns);
+                    Console.WriteLine("\nNumber of Log-in attempt/s left: " + totalLogIns);
                 }
                 else
                 {
                     Console.WriteLine("The username or the password is incorrect.");
                     Console.WriteLine("\nToo many unsuccessful Log-in attempts. Account Locked.");
-                    return;
+                    break;
                 }
             }
         }
